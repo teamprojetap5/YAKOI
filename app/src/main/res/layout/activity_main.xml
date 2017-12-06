@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mbraconnier.yakoi.MainActivity">
+    <!-- LinearLayout haut -->
+    <LinearLayout
+        android:id="@+id/layoutActivity1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#80000000"
+        android:background="@drawable/chtidelire"
+        android:backgroundTintMode="src_over"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/activity1_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="CHTI DELIRE"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/coureur"
+            />
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/euros"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="€ €"
+                android:textColor="@android:color/background_light"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/localisation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.9 km"
+                android:textColor="@android:color/background_light"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- LinearLayout milieu -->
+    <LinearLayout
+        android:id="@+id/GridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Milieu Gauche -->
+        <LinearLayout
+            android:id="@+id/layoutActivity2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#33000000"
+            android:background="@drawable/lapiscine"
+            android:backgroundTintMode="src_over"
+            android:orientation="vertical"
+            android:clickable="true"
+
+            >
+
+            <TextView
+                android:id="@+id/activity2_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="LA PISCINE"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/coureur"
+                />
+            <LinearLayout
+                android:id="@+id/infoLayoutActivity2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/eurosActivity2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="€"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/localisationActivity2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="1.2 km"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Milieu Droit -->
+        <LinearLayout
+            android:id="@+id/layoutActivity3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#33000000"
+            android:background="@drawable/crossfit"
+            android:backgroundTintMode="src_over"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/activity3_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="CROSS FIT"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/coureur"
+                />
+            <LinearLayout
+                android:id="@+id/infoLayoutActivity3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/eurosActivity3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="€ € €"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/localisationActivity3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="3.4 km"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- LinearLayout bas-->
+    <LinearLayout
+        android:id="@+id/GridLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- LinearLayout bas gauche -->
+
+        <LinearLayout
+            android:id="@+id/layoutActivity4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#33000000"
+            android:background="@drawable/ane"
+            android:backgroundTintMode="src_over"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/activity4_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="LA Z'ANE ATTITUDE"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/coureur"
+                />
+            <LinearLayout
+                android:id="@+id/infoLayoutActivity4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/eurosActivity4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="€ €"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/localisationActivity4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="0.7 km"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- LinearLayout bas droit -->
+
+        <LinearLayout
+            android:id="@+id/layoutActivity5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#33000000"
+            android:background="@drawable/escrime"
+            android:backgroundTintMode="src_over"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/activity5_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="ESCRIME"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/coureur"
+                />
+
+            <LinearLayout
+                android:id="@+id/infoLayoutActivity5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/eurosActivity5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="€"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/localisationActivity5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="6.0 km"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mbraconnier.yakoi.DescribeActivity">
+
+    <!-- LinearLayout image Activité -->
+    <LinearLayout
+        android:id="@+id/imageActivite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#80000000"
+        android:background="@drawable/chtidelire"
+        android:backgroundTintMode="src_over"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/activity1_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="CHTI DELIRE"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="45dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/coureur"
+            />
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/euros"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="€ €"
+                android:textColor="@android:color/background_light"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/localisation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.9 km"
+                android:textColor="@android:color/background_light"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- LinearLayout infos activité -->
+    <LinearLayout
+        android:id="@+id/layoutInfoActivite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:clickable="true">
+    </LinearLayout>
+    <!-- LinearLayout Adresse activité -->
+
+    <LinearLayout
+        android:id="@+id/layoutAdresseActivite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:clickable="true">
+    </LinearLayout>
+
+    <!-- LinearLayout Description activité -->
+
+    <LinearLayout
+        android:id="@+id/layoutDescriptionActivite"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="#c4c2c2"
+        android:orientation="vertical"
+        android:clickable="true">
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- LinearLayout Boutons activité -->
+
+    <LinearLayout
+        android:id="@+id/layoutBoutonsActivite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:clickable="true">
+
+
+        <LinearLayout
+            android:id="@+id/GridLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Milieu Gauche -->
+            <LinearLayout
+                android:id="@+id/bouton1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/button_contact"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="#FFFFFF"
+                    android:textColor="#000000"
+                    android:text="Contacter"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bouton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:clickable="true"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/button_go"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF"
+                    android:text="Contacter"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
