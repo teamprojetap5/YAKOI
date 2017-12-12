@@ -1,3 +1,92 @@
 <resources>
+    <!--Strings relatifs à l'ensemble des pages -->
     <string name="app_name">YAKOI</string>
+    <string name="description">Description:</string>
+
+
+    <!-- Strings relatifs au main -->
+
+
+    <!-- Strings relatifs à l'ativité numéro 1-->
+    <string name="nameActivity1">CHTI DELIRE</string>
+    <string name="distanceActivity1">0.9 km</string>
+    <string name="themeActivity1">Sport</string>
+    <string name="dateActivity1">24 octobre 2017</string>
+    <string name="timeActivity1">10h - 19h</string>
+    <string name="priceActivity1">€ €</string>
+    <string name="namePlaceActivity1">Le stadium</string>
+    <string name="addressActivity1">L\'adresse du stadium qui m\'est inconnue</string>
+    <string name="placeActivity1">Extérieur</string>
+    <string name="capacityActivity1">2 000 personnes</string>
+    <string name="contentDescriptionActivity1">orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id neque justo. Aliquam congue lectus sit amet ipsum semper finibus. Morbi posuere porta sem a ornare. In sagittis nibh purus, non tincidunt eros mattis vel. Pellentesque ac condimentum justo, et pretium est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget euismod leo. Fusce dictum sit amet sapien vitae rhoncus. Mauris tincidunt est enim, congue suscipit est pretium id. In ut nisl a risus condimentum maximus. Donec id tortor metus. Nulla consequat sem ut odio aliquam, a venenatis nulla pretium. Morbi fringilla id augue a pharetra. Nam id eleifend enim. Donec a arcu vitae lectus mollis semper. Fusce mollis ligula et porttitor faucibus.
+Vivamus tincidunt lobortis nisl eu efficitur. Donec ac sem nec neque bibendum finibus. Sed sit amet vestibulum nisl. Phasellus laoreet ac enim vitae dictum. Proin vitae rutrum lectus, ac placerat lorem. Vivamus ipsum orci, volutpat egestas ultrices vel, volutpat et tellus. Aliquam erat volutpat. Morbi tincidunt risus ac nunc ullamcorper, ac interdum ante scelerisque. Quisque lacinia, eros vel consequat pulvinar, est orci maximus ipsum, ac laoreet nisi tellus at dolor. Nullam et felis risus. Ut lacinia urna vitae ultrices imperdiet. Proin viverra mi augue, sed congue velit laoreet ac. Maecenas efficitur ullamcorper ultricies. </string>
+    <string name="button1Activity1">Contacter</string>
+    <string name="button2Activity1">J\'y vais</string>
+
+
+    <!-- Strings relatifs à l'activité numéro 2 -->
+    <string name="nameActivity2">LA PISCINE</string>
+    <string name="distanceActivity2">1.2 km</string>
+    <string name="themeActivity2">Sport</string>
+    <string name="dateActivity2">24 octobre 2017</string>
+    <string name="timeActivity2">10h - 19h</string>
+    <string name="priceActivity2">€</string>
+    <string name="namePlaceActivity2">Le stadium</string>
+    <string name="addressActivity2">L\'adresse du stadium qui m\'est inconnue</string>
+    <string name="placeActivity2">Extérieur</string>
+    <string name="capacityActivity2">2 000 personnes</string>
+    <string name="contentDescriptionActivity2">orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id neque justo. Aliquam congue lectus sit amet ipsum semper finibus. Morbi posuere porta sem a ornare. In sagittis nibh purus, non tincidunt eros mattis vel. Pellentesque ac condimentum justo, et pretium est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget euismod leo. Fusce dictum sit amet sapien vitae rhoncus. Mauris tincidunt est enim, congue suscipit est pretium id. In ut nisl a risus condimentum maximus. Donec id tortor metus. Nulla consequat sem ut odio aliquam, a venenatis nulla pretium. Morbi fringilla id augue a pharetra. Nam id eleifend enim. Donec a arcu vitae lectus mollis semper. Fusce mollis ligula et porttitor faucibus.
+Vivamus tincidunt lobortis nisl eu efficitur. Donec ac sem nec neque bibendum finibus. Sed sit amet vestibulum nisl. Phasellus laoreet ac enim vitae dictum. Proin vitae rutrum lectus, ac placerat lorem. Vivamus ipsum orci, volutpat egestas ultrices vel, volutpat et tellus. Aliquam erat volutpat. Morbi tincidunt risus ac nunc ullamcorper, ac interdum ante scelerisque. Quisque lacinia, eros vel consequat pulvinar, est orci maximus ipsum, ac laoreet nisi tellus at dolor. Nullam et felis risus. Ut lacinia urna vitae ultrices imperdiet. Proin viverra mi augue, sed congue velit laoreet ac. Maecenas efficitur ullamcorper ultricies. </string>
+    <string name="button1Activity2">Contacter</string>
+    <string name="button2Activity2">J\'y vais</string>
+
+
+    <!-- Strings relatifs à l'activité numéro 3 -->
+    <string name="nameActivity3">CROSS FIT</string>
+    <string name="distanceActivity3">3.4 km</string>
+    <string name="themeActivity3">Sport</string>
+    <string name="dateActivity3">24 octobre 2017</string>
+    <string name="timeActivity3">10h - 19h</string>
+    <string name="priceActivity3">€ € €</string>
+    <string name="namePlaceActivity3">Le stadium</string>
+    <string name="addressActivity3">L\'adresse du stadium qui m\'est inconnue</string>
+    <string name="placeActivity3">Extérieur</string>
+    <string name="capacityActivity3">2 000 personnes</string>
+    <string name="contentDescriptionActivity3">orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id neque justo. Aliquam congue lectus sit amet ipsum semper finibus. Morbi posuere porta sem a ornare. In sagittis nibh purus, non tincidunt eros mattis vel. Pellentesque ac condimentum justo, et pretium est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget euismod leo. Fusce dictum sit amet sapien vitae rhoncus. Mauris tincidunt est enim, congue suscipit est pretium id. In ut nisl a risus condimentum maximus. Donec id tortor metus. Nulla consequat sem ut odio aliquam, a venenatis nulla pretium. Morbi fringilla id augue a pharetra. Nam id eleifend enim. Donec a arcu vitae lectus mollis semper. Fusce mollis ligula et porttitor faucibus.
+Vivamus tincidunt lobortis nisl eu efficitur. Donec ac sem nec neque bibendum finibus. Sed sit amet vestibulum nisl. Phasellus laoreet ac enim vitae dictum. Proin vitae rutrum lectus, ac placerat lorem. Vivamus ipsum orci, volutpat egestas ultrices vel, volutpat et tellus. Aliquam erat volutpat. Morbi tincidunt risus ac nunc ullamcorper, ac interdum ante scelerisque. Quisque lacinia, eros vel consequat pulvinar, est orci maximus ipsum, ac laoreet nisi tellus at dolor. Nullam et felis risus. Ut lacinia urna vitae ultrices imperdiet. Proin viverra mi augue, sed congue velit laoreet ac. Maecenas efficitur ullamcorper ultricies. </string>
+    <string name="button1Activity3">Contacter</string>
+    <string name="button2Activity3">J\'y vais</string>
+
+    <!-- Strings relatifs à l'activité numéro 4 -->
+    <string name="nameActivity4">Z\'ANE ATTITUDE</string>
+    <string name="distanceActivity4">1.7 km</string>
+    <string name="themeActivity4">Sport</string>
+    <string name="dateActivity4">24 octobre 2017</string>
+    <string name="timeActivity4">10h - 19h</string>
+    <string name="priceActivity4">€ €</string>
+    <string name="namePlaceActivity4">Le stadium</string>
+    <string name="addressActivity4">L\'adresse du stadium qui m\'est inconnue</string>
+    <string name="placeActivity4">Extérieur</string>
+    <string name="capacityActivity4">2 000 personnes</string>
+    <string name="contentDescriptionActivity4">orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id neque justo. Aliquam congue lectus sit amet ipsum semper finibus. Morbi posuere porta sem a ornare. In sagittis nibh purus, non tincidunt eros mattis vel. Pellentesque ac condimentum justo, et pretium est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget euismod leo. Fusce dictum sit amet sapien vitae rhoncus. Mauris tincidunt est enim, congue suscipit est pretium id. In ut nisl a risus condimentum maximus. Donec id tortor metus. Nulla consequat sem ut odio aliquam, a venenatis nulla pretium. Morbi fringilla id augue a pharetra. Nam id eleifend enim. Donec a arcu vitae lectus mollis semper. Fusce mollis ligula et porttitor faucibus.
+Vivamus tincidunt lobortis nisl eu efficitur. Donec ac sem nec neque bibendum finibus. Sed sit amet vestibulum nisl. Phasellus laoreet ac enim vitae dictum. Proin vitae rutrum lectus, ac placerat lorem. Vivamus ipsum orci, volutpat egestas ultrices vel, volutpat et tellus. Aliquam erat volutpat. Morbi tincidunt risus ac nunc ullamcorper, ac interdum ante scelerisque. Quisque lacinia, eros vel consequat pulvinar, est orci maximus ipsum, ac laoreet nisi tellus at dolor. Nullam et felis risus. Ut lacinia urna vitae ultrices imperdiet. Proin viverra mi augue, sed congue velit laoreet ac. Maecenas efficitur ullamcorper ultricies. </string>
+    <string name="button1Activity4">Contacter</string>
+    <string name="button2Activity4">J\'y vais</string>
+
+    <!-- Strings relatifs à l'activité numéro 4 -->
+    <string name="nameActivity5">ESCRIME</string>
+    <string name="distanceActivity5">6.0 km</string>
+    <string name="themeActivity5">Sport</string>
+    <string name="dateActivity5">24 octobre 2017</string>
+    <string name="timeActivity5">10h - 19h</string>
+    <string name="priceActivity5">€</string>
+    <string name="namePlaceActivity5">Le stadium</string>
+    <string name="addressActivity5">L\'adresse du stadium qui m\'est inconnue</string>
+    <string name="placeActivity5">Extérieur</string>
+    <string name="capacityActivity5">2 000 personnes</string>
+    <string name="contentDescriptionActivity5">orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id neque justo. Aliquam congue lectus sit amet ipsum semper finibus. Morbi posuere porta sem a ornare. In sagittis nibh purus, non tincidunt eros mattis vel. Pellentesque ac condimentum justo, et pretium est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget euismod leo. Fusce dictum sit amet sapien vitae rhoncus. Mauris tincidunt est enim, congue suscipit est pretium id. In ut nisl a risus condimentum maximus. Donec id tortor metus. Nulla consequat sem ut odio aliquam, a venenatis nulla pretium. Morbi fringilla id augue a pharetra. Nam id eleifend enim. Donec a arcu vitae lectus mollis semper. Fusce mollis ligula et porttitor faucibus.
+Vivamus tincidunt lobortis nisl eu efficitur. Donec ac sem nec neque bibendum finibus. Sed sit amet vestibulum nisl. Phasellus laoreet ac enim vitae dictum. Proin vitae rutrum lectus, ac placerat lorem. Vivamus ipsum orci, volutpat egestas ultrices vel, volutpat et tellus. Aliquam erat volutpat. Morbi tincidunt risus ac nunc ullamcorper, ac interdum ante scelerisque. Quisque lacinia, eros vel consequat pulvinar, est orci maximus ipsum, ac laoreet nisi tellus at dolor. Nullam et felis risus. Ut lacinia urna vitae ultrices imperdiet. Proin viverra mi augue, sed congue velit laoreet ac. Maecenas efficitur ullamcorper ultricies. </string>
+    <string name="button1Activity5">Contacter</string>
+    <string name="button2Activity5">J\'y vais</string>
+
 </resources>

@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:backgroundTint="#80000000"
         android:background="@drawable/chtidelire"
+        android:backgroundTint="#80000000"
         android:backgroundTintMode="src_over"
         android:orientation="vertical"
         android:clickable="true">
@@ -24,7 +24,7 @@
             android:layout_height="0dp"
             android:layout_weight="3"
             android:gravity="center"
-            android:text="CHTI DELIRE"
+            android:text="@string/nameActivity1"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"
             android:textSize="45dp"
@@ -32,14 +32,14 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:src="@drawable/coureur"
             />
         <LinearLayout
             android:id="@+id/infoLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:orientation="horizontal"
             android:layout_margin="10dp">
 
@@ -49,7 +49,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="left"
-                android:text="€ €"
+                android:text="@string/priceActivity1"
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/background_light"
                 android:textSize="25dp" />
 
@@ -59,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text="0.9 km"
+                android:text="@string/distanceActivity1"
                 android:textColor="@android:color/background_light"
                 android:textSize="25dp" />
         </LinearLayout>
@@ -81,12 +82,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#33000000"
             android:background="@drawable/lapiscine"
+            android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
-
             >
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="LA PISCINE"
+                android:text="@string/nameActivity2"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_light"
                 android:textSize="30dp"
@@ -103,14 +103,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:src="@drawable/coureur"
                 />
             <LinearLayout
                 android:id="@+id/infoLayoutActivity2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:orientation="horizontal"
                 android:layout_margin="10dp">
 
@@ -120,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="€"
+                    android:text="@string/priceActivity2"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="1.2 km"
+                    android:text="@string/distanceActivity2"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -144,8 +144,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#33000000"
             android:background="@drawable/crossfit"
+            android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
@@ -157,7 +157,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="CROSS FIT"
+                android:text="@string/nameActivity3"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_light"
                 android:textSize="30dp"
@@ -165,14 +165,14 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:src="@drawable/coureur"
                 />
             <LinearLayout
                 android:id="@+id/infoLayoutActivity3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:orientation="horizontal"
                 android:layout_margin="10dp">
 
@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="€ € €"
+                    android:text="@string/priceActivity3"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -192,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="3.4 km"
+                    android:text="@string/distanceActivity3"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -218,8 +218,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#33000000"
             android:background="@drawable/ane"
+            android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
@@ -231,22 +231,22 @@
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="LA Z'ANE ATTITUDE"
+                android:text="@string/nameActivity4"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_light"
-                android:textSize="30dp"
+                android:textSize="22dp"
                 android:textStyle="bold" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:src="@drawable/coureur"
                 />
             <LinearLayout
                 android:id="@+id/infoLayoutActivity4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:orientation="horizontal"
                 android:layout_margin="10dp">
 
@@ -256,7 +256,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="€ €"
+                    android:text="@string/priceActivity4"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -266,7 +266,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:text="0.7 km"
+                    android:text="@string/distanceActivity4"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -281,12 +281,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="#33000000"
             android:background="@drawable/escrime"
+            android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
             >
+            <!---->
 
             <TextView
                 android:id="@+id/activity5_name"
@@ -294,7 +295,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:gravity="center"
-                android:text="ESCRIME"
+                android:text="@string/nameActivity5"
                 android:textAlignment="center"
                 android:textColor="@android:color/background_light"
                 android:textSize="30dp"
@@ -302,7 +303,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="4"
                 android:src="@drawable/coureur"
                 />
 
@@ -310,7 +311,7 @@
                 android:id="@+id/infoLayoutActivity5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:layout_margin="10dp">
 
                 <TextView
@@ -319,7 +320,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="left"
-                    android:text="€"
+                    android:text="@string/priceActivity5"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 
@@ -328,7 +329,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:text="6.0 km"
+                    android:text="@string/distanceActivity5"
                     android:textColor="@android:color/background_light"
                     android:textSize="25dp" />
 

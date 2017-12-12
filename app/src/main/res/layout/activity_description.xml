@@ -19,52 +19,12 @@
         android:orientation="vertical"
         android:clickable="true">
 
-        <TextView
-            android:id="@+id/activity1_name"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="CHTI DELIRE"
-            android:textAlignment="center"
-            android:textColor="@android:color/background_light"
-            android:textSize="45dp"
-            android:textStyle="bold" />
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
             android:src="@drawable/coureur"
             />
-        <LinearLayout
-            android:id="@+id/infoLayout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:layout_margin="10dp">
-
-            <TextView
-                android:id="@+id/euros"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="left"
-                android:text="€ €"
-                android:textColor="@android:color/background_light"
-                android:textSize="25dp" />
-
-            <TextView
-                android:id="@+id/localisation"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="right"
-                android:text="0.9 km"
-                android:textColor="@android:color/background_light"
-                android:textSize="25dp" />
-        </LinearLayout>
-
 
     </LinearLayout>
 
@@ -73,61 +33,238 @@
         android:id="@+id/layoutInfoActivite"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.6"
         android:background="#000000"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:clickable="true">
-    </LinearLayout>
-    <!-- LinearLayout Adresse activité -->
 
+        <LinearLayout
+            android:id="@+id/layoutInfoActiviteCategorie"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button_white"
+                android:gravity="center"
+                android:text="@string/themeActivity1"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutInfoActiviteDateLieu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#000000"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layoutInfoActiviteDateLieuDate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/dateActivity1"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutInfoActiviteDateLieuLieu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/timeActivity1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutInfoActivitePrix"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#000000"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priceActivity1"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="right"
+                android:textSize="24dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- LinearLayout Adresse activité -->
     <LinearLayout
         android:id="@+id/layoutAdresseActivite"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
         android:background="#FFFFFF"
-        android:orientation="vertical"
-        android:clickable="true">
+        android:clickable="true"
+        android:orientation="vertical">
+        <!-- adresse ligne 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/namePlaceActivity1"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="22dp"/>
+        </LinearLayout>
+        <!-- adresse ligne 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/addressActivity1"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
     </LinearLayout>
 
     <!-- LinearLayout Description activité -->
-
     <LinearLayout
         android:id="@+id/layoutDescriptionActivite"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_weight="3"
         android:background="#c4c2c2"
-        android:orientation="vertical"
-        android:clickable="true">
-        
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        android:orientation="vertical">
 
-        </ScrollView>
+        <!-- Infos affichées -->
+        <LinearLayout
+            android:id="@+id/infosDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <!-- Logo gauche-->
+            <LinearLayout
+                android:id="@+id/infoDescriptionGauche"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#c4c2c2"
+                android:orientation="horizontal"
+                android:layout_marginLeft="4dp">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/round_button_white"
+                    android:text="@string/placeActivity1"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Logo droite -->
+            <LinearLayout
+                android:id="@+id/infoDescriptionDroite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#c4c2c2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/capacityActivity1"
+                    android:gravity="right"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Nom Description: -->
+        <LinearLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="@string/description"/>
+        </LinearLayout>
+
+        <!-- Partie description -->
+        <LinearLayout
+            android:id="@+id/texteDescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_margin="4dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/contentDescriptionActivity1"
+                    android:textColor="#000000"
+                    android:gravity="left"/>
+            </ScrollView>
+        </LinearLayout>
+
     </LinearLayout>
 
     <!-- LinearLayout Boutons activité -->
-
     <LinearLayout
         android:id="@+id/layoutBoutonsActivite"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.6"
         android:background="#FFFFFF"
-        android:orientation="vertical"
-        android:clickable="true">
-
+        android:orientation="horizontal">
 
         <LinearLayout
             android:id="@+id/GridLayout2"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="horizontal">
 
-            <!-- Milieu Gauche -->
+            <!-- Bouton Gauche -->
             <LinearLayout
                 android:id="@+id/bouton1"
                 android:layout_width="0dp"
@@ -135,36 +272,39 @@
                 android:layout_weight="1"
                 android:background="#FFFFFF"
                 android:clickable="true"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/button_contact"
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:background="#FFFFFF"
-                    android:textColor="#000000"
-                    android:text="Contacter"
-                    />
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/button1Activity1"
+                    android:textColor="#000000" />
             </LinearLayout>
 
+            <!-- Bouton Droit-->
             <LinearLayout
                 android:id="@+id/bouton2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#000000"
+                android:background="#FFFFFF"
                 android:clickable="true"
                 android:orientation="horizontal"
                 >
+
                 <Button
                     android:id="@+id/button_go"
-                    android:layout_height="match_parent"
                     android:layout_width="match_parent"
-                    android:background="#000000"
-                    android:textColor="#FFFFFF"
-                    android:text="Contacter"
-                    />
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_button"
+                    android:text="@string/button2Activity1"
+                    android:textColor="#000000" />
             </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 

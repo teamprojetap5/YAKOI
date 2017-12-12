@@ -1,5 +1,6 @@
 package com.example.mbraconnier.yakoi;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,19 +22,25 @@ public class MainActivity extends AppCompatActivity {
         activity1Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Click activité 1",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"Click activité 1",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                startActivity(intent);
             }
         });
         activity2Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Click activité 2",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"Click activité 2",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, TestGeolocalisation.class);
+                startActivity(intent);
             }
         });
         activity3Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Click activité 3",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this,"Click activité 3",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, TestPhone.class);
+                startActivity(intent);
             }
         });
         activity4Layout.setOnClickListener(new View.OnClickListener() {
