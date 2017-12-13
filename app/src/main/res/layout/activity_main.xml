@@ -41,7 +41,7 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:orientation="horizontal"
-            android:layout_margin="10dp">
+            android:layout_margin="0dp">
 
             <TextView
                 android:id="@+id/euros"
@@ -112,7 +112,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:orientation="horizontal"
-                android:layout_margin="10dp">
+                android:layout_margin="0dp">
 
                 <TextView
                     android:id="@+id/eurosActivity2"
@@ -174,7 +174,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:orientation="horizontal"
-                android:layout_margin="10dp">
+                android:layout_margin="0dp">
 
                 <TextView
                     android:id="@+id/eurosActivity3"
@@ -248,7 +248,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:orientation="horizontal"
-                android:layout_margin="10dp">
+                android:layout_margin="0dp">
 
                 <TextView
                     android:id="@+id/eurosActivity4"
@@ -312,7 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:layout_margin="10dp">
+                android:layout_margin="0dp">
 
                 <TextView
                     android:id="@+id/eurosActivity5"
