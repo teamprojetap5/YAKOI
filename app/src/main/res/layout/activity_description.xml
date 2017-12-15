@@ -20,6 +20,7 @@
         android:clickable="true">
 
         <ImageView
+            android:id="@+id/imageActivite1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"
@@ -47,6 +48,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/theme_activite1"
                 android:layout_width="64dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -74,6 +76,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/dateActivite1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -89,6 +92,7 @@
                 android:background="#000000"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/horaireActivite1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/timeActivity1"
@@ -105,6 +109,7 @@
             android:background="#000000"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/prixActivite1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/priceActivity1"
@@ -130,6 +135,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/nomPlaceActivite1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/namePlaceActivity1"
@@ -144,6 +150,7 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <TextView
+                android:id="@+id/adresseActivite1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="@string/addressActivity1"
@@ -182,6 +189,7 @@
                 android:layout_marginLeft="4dp">
 
                 <TextView
+                    android:id="@+id/environnementActivite1"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
@@ -201,6 +209,7 @@
                 android:background="#c4c2c2"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/capaciteActivite1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/capacityActivity1"
@@ -238,6 +247,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
                 <TextView
+                    android:id="@+id/descriptionActivite1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="@string/contentDescriptionActivity1"

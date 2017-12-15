@@ -1,0 +1,22 @@
+{
+  "Id":1,
+  "Titre":"La piscine",
+  "Logo":"Musée",
+  "Image":"piscine.jpg",
+  "DateAffichage":"21 décembre 2017",
+  "Horaire":"10h - 17h",
+  "CapaciteMax":2000,
+  "Theme":"Culture",
+  "Environnement":"Intérieur",
+  "Budget":"€ €",
+  "Description":" Description de l'activité ",
+  "Telephone":"0637752550",
+  "Site":"www.lapiscine.fr",
+  "Email":"la.piscine@tropbien.fr",
+  "Accessibilites":["Handicapés","malvoyant","chauve"],
+  "ModesDePaiement":["CB","Liquide"],
+  "Numero":21,
+  "Rue":"La rue de l'eau",
+  "CodePostal":59250,
+  "Ville":"Roubaix"
+}
