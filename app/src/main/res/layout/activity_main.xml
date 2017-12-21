@@ -44,7 +44,7 @@
             android:layout_margin="0dp">
 
             <TextView
-                android:id="@+id/euros"
+                android:id="@+id/eurosActivity1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -55,7 +55,7 @@
                 android:textSize="25dp" />
 
             <TextView
-                android:id="@+id/localisation"
+                android:id="@+id/localisationActivity1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

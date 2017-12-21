@@ -2,6 +2,15 @@
     <!--Strings relatifs à l'ensemble des pages -->
     <string name="app_name">YAKOI</string>
     <string name="description">Description:</string>
+    <string name="personne">Personnes</string>
+    <string name="interieur">Intérieur</string>
+    <string name="exterieur">Extérieur</string>
+    <string name="pmr">PMR</string>
+    <string name="malentendant">Malentendant</string>
+    <string name="malvoyant">Malvoyant</string>
+    <string name="enfant">Enfant</string>
+    <string name="agee">Personne Agée</string>
+
 
 
     <!-- Strings relatifs au main -->

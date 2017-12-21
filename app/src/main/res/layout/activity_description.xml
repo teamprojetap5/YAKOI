@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context="com.example.mbraconnier.yakoi.DescribeActivity">
 
-    <!-- LinearLayout image Activité -->
+    <!-- LinearLayout image Activité - Logo activité -->
     <LinearLayout
         android:id="@+id/imageActivite"
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
 
     </LinearLayout>
 
-    <!-- LinearLayout infos activité -->
+    <!-- LinearLayout infos activité theme - Date - Heure - Prix -->
     <LinearLayout
         android:id="@+id/layoutInfoActivite"
         android:layout_width="match_parent"
@@ -49,16 +49,15 @@
 
             <TextView
                 android:id="@+id/theme_activite1"
-                android:layout_width="64dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:background="@drawable/round_button_white"
+                android:layout_marginTop="25dp"
                 android:gravity="center"
                 android:text="@string/themeActivity1"
                 android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="#000000"
-                android:textSize="24dp" />
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/layoutInfoActiviteDateLieu"
@@ -169,63 +168,94 @@
         android:layout_weight="3"
         android:background="#c4c2c2"
         android:orientation="vertical">
-
-        <!-- Infos affichées -->
+        
         <LinearLayout
-            android:id="@+id/infosDescription"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.3"
+            android:layout_weight="0.5"
             android:orientation="horizontal">
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#000000">
 
-            <!-- Logo gauche-->
-            <LinearLayout
-                android:id="@+id/infoDescriptionGauche"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#c4c2c2"
-                android:orientation="horizontal"
-                android:layout_marginLeft="4dp">
-
-                <TextView
-                    android:id="@+id/environnementActivite1"
-                    android:layout_width="70dp"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="1dp"
-                    android:background="@drawable/round_button_white"
-                    android:text="@string/placeActivity1"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                    android:orientation="horizontal" >
 
-            <!-- Logo droite -->
-            <LinearLayout
-                android:id="@+id/infoDescriptionDroite"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#c4c2c2"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/capaciteActivite1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/capacityActivity1"
-                    android:gravity="right"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                    <Button
+                        android:id="@+id/environnementexterieur"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Extérieur"
+                        android:clickable="false" />
+
+                    <Button
+                        android:id="@+id/exterieurActivite1"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intérieur"
+                        android:clickable="false"/>
+
+                    <Button
+                        android:id="@+id/capaciteActivite1"
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PMR"
+                        android:clickable="false"/>
+
+                    <Button
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malentendant"
+                        android:clickable="false"/>
+
+                    <Button
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malvoyant"
+                        android:clickable="false"/>
+
+                    <Button
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enfant"
+                        android:clickable="false"/>
+
+                    <Button
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personne agée"
+                        android:clickable="false"/>
+
+                    <Button
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 000 personnes"
+                        android:clickable="false"/>
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
         </LinearLayout>
-
 
         <!-- Nom Description: -->
         <LinearLayout
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.25"
+            android:layout_weight="0.3"
             android:orientation="horizontal">
             <TextView
                 android:layout_width="match_parent"
