@@ -185,28 +185,6 @@ public class DescribeActivity extends AppCompatActivity {
         nomPlaceActivite1 = (TextView) findViewById(R.id.nomPlaceActivite1);
         adresseActivite1 = (TextView) findViewById(R.id.adresseActivite1);
 
-        //Boutons horizontal Scroll
-
-        //Lieu événement
-        exterieurActivite = (Button) findViewById(R.id.environnementExterieur);
-        interieurActivite = (Button) findViewById(R.id.environnementInterieur);
-
-        //Accessibilité activité
-        pmrActivite = (Button) findViewById(R.id.PMR);
-        malentendantActivite = (Button) findViewById(R.id.malentendant);
-        malvoyantActivite = (Button) findViewById(R.id.malvoyant);
-        enfantActivite = (Button) findViewById(R.id.enfant);
-        ageeActivite = (Button) findViewById(R.id.agee);
-
-        //Capacité Activité
-        capaciteActivite = (Button) findViewById(R.id.capacite);
-
-        //Moyen de paiement activité
-        cbActivite = (Button) findViewById(R.id.CB);
-        paypalActivite = (Button) findViewById(R.id.payPal);
-        especesActivites = (Button) findViewById(R.id.especes);
-        chequeActivites = (Button) findViewById(R.id.cheque);
-
 
         descriptionActivite1 = (TextView) findViewById(R.id.descriptionActivite1);
 
@@ -223,61 +201,35 @@ public class DescribeActivity extends AppCompatActivity {
         horaireActivite1.setText(activityObject[number].getHoraire());
 
 
-        Button button = new Button(this);
-        button.setText("Test");
-        buttonContainer.addView(button);
+        Button buttonCapacite = new Button(this);
 
-        capaciteActivite.setText(activityObject[number].getCapaciteMax() + " Personnes");
-        capaciteActivite.setVisibility(View.VISIBLE);
+        buttonCapacite.setText(activityObject[number].getCapaciteMax() + " Personnes");
+        buttonContainer.addView(buttonCapacite);
+
 
         accessibilites = activityObject[number].getAccessibilite();
         for(int i = 0;i<accessibilites.length;i++){
-            switch (accessibilites[i]){
-                case "PMR":
-                    pmrActivite.setVisibility(View.VISIBLE);
-                    break;
-                case "Malentendant":
-                    malentendantActivite.setVisibility(View.VISIBLE);
-                    break;
-                case "Malvoyant":
-                    malvoyantActivite.setVisibility(View.VISIBLE);
-                    break;
-                case "Enfant":
-                    enfantActivite.setVisibility(View.VISIBLE);
-                    break;
-                case "Agee":
-                    ageeActivite.setVisibility(View.VISIBLE);
-                    break;
-            }
+            Button buttonAccessibilite = new Button(this);
+            buttonAccessibilite.setText(accessibilites[i]);
+            buttonContainer.addView(buttonAccessibilite);
         }
 
         paiement = activityObject[number].getPaiement();
         for(int i = 0; i<paiement.length;i++){
-            switch (paiement[i]){
-                case "CB":
-                    cbActivite.setVisibility(View.VISIBLE);
-                    break;
-                case "Paypal":
-                    paypalActivite.setVisibility(View.VISIBLE);
-                    break;
-                case "Espèces":
-                    especesActivites.setVisibility(View.VISIBLE);
-                    break;
-                case "Chèque":
-                    chequeActivites.setVisibility(View.VISIBLE);
-                    break;
-            }
+            Button buttonPaiement = new Button(this);
+            buttonPaiement.setText(paiement[i]);
+            buttonContainer.addView(buttonPaiement);
         }
+
+        Button buttonEnvironnement = new Button(this);
 
         if(activityObject[number].getEnvironnement().equals("Les deux") ){
-            exterieurActivite.setVisibility(View.VISIBLE);
-            interieurActivite.setVisibility(View.VISIBLE);
-        }else if(activityObject[number].getEnvironnement().equals("Intérieur")){
-            interieurActivite.setVisibility(View.VISIBLE);
-        }else if(activityObject[number].getEnvironnement().equals("Extérieur")){
-            exterieurActivite.setVisibility(View.VISIBLE);
-
+            buttonEnvironnement.setText("Intérieur & Extérieur");
+        }else{
+            buttonEnvironnement.setText(activityObject[number].getEnvironnement());
         }
+        buttonContainer.addView(buttonEnvironnement);
+
         String imageName = "R.drawable." + activityObject[number].getImage();
     }
 
