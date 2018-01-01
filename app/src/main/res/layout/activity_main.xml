@@ -7,16 +7,17 @@
     android:orientation="vertical"
     tools:context="com.example.mbraconnier.yakoi.MainActivity">
     <!-- LinearLayout haut -->
+    <!-- android:background="@drawable/chtidelire" -->
     <LinearLayout
         android:id="@+id/layoutActivity1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@drawable/chtidelire"
         android:backgroundTint="#80000000"
         android:backgroundTintMode="src_over"
         android:orientation="vertical"
-        android:clickable="true">
+        android:clickable="true"
+        android:background="@drawable/chtidelire">
 
         <TextView
             android:id="@+id/activity1_name"
@@ -77,16 +78,17 @@
         android:orientation="horizontal">
 
         <!-- Milieu Gauche -->
+        <!-- android:background="@drawable/lapiscine" -->
         <LinearLayout
             android:id="@+id/layoutActivity2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/lapiscine"
             android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
+            android:background="@drawable/lapiscine"
             >
 
             <TextView
@@ -139,16 +141,17 @@
         </LinearLayout>
 
         <!-- Milieu Droit -->
+        <!-- android:background="@drawable/crossfit" -->
         <LinearLayout
             android:id="@+id/layoutActivity3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/crossfit"
             android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
+            android:background="@drawable/crossfit"
             >
 
             <TextView
@@ -212,17 +215,17 @@
         android:orientation="horizontal">
 
         <!-- LinearLayout bas gauche -->
-
+        <!-- android:background="@drawable/ane" -->
         <LinearLayout
             android:id="@+id/layoutActivity4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/ane"
             android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
+            android:background="@drawable/ane"
             >
 
             <TextView
@@ -275,17 +278,17 @@
         </LinearLayout>
 
         <!-- LinearLayout bas droit -->
-
+        <!-- android:background="@drawable/escrime" -->
         <LinearLayout
             android:id="@+id/layoutActivity5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/escrime"
             android:backgroundTint="#33000000"
             android:backgroundTintMode="src_over"
             android:orientation="vertical"
             android:clickable="true"
+            android:background="@drawable/escrime"
             >
             <!---->
 

@@ -1,12 +1,5 @@
 package com.example.mbraconnier.yakoi;
 
-import android.widget.Toast;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
-import java.util.List;
-
 /**
  * Created by mbraconnier on 15/12/2017.
  */
@@ -26,8 +19,8 @@ public class ActivityObject {
     private String Horaire;
     private String Site;
     private String Email;
-    private List<String> Accessibilites;
-    private List<String> ModesDePaiement;
+    private String[] Accessibilite;
+    private String[] Paiement;
     private int Numero;
     private String Rue;
     private int CodePostal;
@@ -36,7 +29,7 @@ public class ActivityObject {
     public ActivityObject() {
     }
 
-    public ActivityObject(int id, String horaire, String titre, String logo, String image, String dateAffichage, String capaciteMax, String theme, String environnement, String budget, String description, String telephone, String site, String email, List<String> accessibilites, List<String> modesDePaiement, int numero, String rue, int codePostal, String ville) {
+    public ActivityObject(int id, String titre, String logo, String image, String dateAffichage, String capaciteMax, String theme, String environnement, String budget, String description, String telephone, String horaire, String site, String email, String[] accessibilites, String[] modesDePaiement, int numero, String rue, int codePostal, String ville) {
         Id = id;
         Titre = titre;
         Logo = logo;
@@ -51,8 +44,8 @@ public class ActivityObject {
         Horaire = horaire;
         Site = site;
         Email = email;
-        Accessibilites = accessibilites;
-        ModesDePaiement = modesDePaiement;
+        Accessibilite = accessibilites;
+        Paiement = modesDePaiement;
         Numero = numero;
         Rue = rue;
         CodePostal = codePostal;
@@ -171,20 +164,20 @@ public class ActivityObject {
         Email = email;
     }
 
-    public List<String> getAccessibilites() {
-        return Accessibilites;
+    public String[] getAccessibilite() {
+        return Accessibilite;
     }
 
-    public void setAccessibilites(List<String> accessibilites) {
-        Accessibilites = accessibilites;
+    public void setAccessibilite(String[] accessibilite) {
+        Accessibilite = accessibilite;
     }
 
-    public List<String> getModesDePaiement() {
-        return ModesDePaiement;
+    public String[] getPaiement() {
+        return Paiement;
     }
 
-    public void setModesDePaiement(List<String> modesDePaiement) {
-        ModesDePaiement = modesDePaiement;
+    public void setPaiement(String[] paiement) {
+        Paiement = paiement;
     }
 
     public int getNumero() {

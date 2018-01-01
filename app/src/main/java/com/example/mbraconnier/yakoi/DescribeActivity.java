@@ -8,14 +8,18 @@ import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,59 +36,56 @@ public class DescribeActivity extends AppCompatActivity {
     private final int REQUEST_PHONE_CALL = 1;
     private final int REQUEST_ACTION_VIEW = 2;
     private String jsonArray;
+    private String accessibilites[];
+    private String paiement[];
+    private Button call_Button;
+    private View go_Layout;
+    private Button website_Button;
+
+    private ImageView imageActivite1;
+    private TextView themeActivite1;
+    private TextView dateActivite1;
+    private TextView horaireActivite1;
+    private TextView prixActivite1;
+    private TextView nomPlaceActivite1;
+    private TextView adresseActivite1;
+    private Button exterieurActivite;
+    private Button interieurActivite;
+    private Button pmrActivite;
+    private Button malentendantActivite;
+    private Button malvoyantActivite;
+    private Button enfantActivite;
+    private Button ageeActivite;
+    private Button capaciteActivite;
+    private Button cbActivite;
+    private Button paypalActivite;
+    private Button especesActivites;
+    private Button chequeActivites;
+    private TextView descriptionActivite1;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_description);
 
+        final int choice = getIntent().getIntExtra("choice",0);
+
         Gson gson = new GsonBuilder().create();
         jsonArray = loadJSONFromAsset();
-        final ActivityObject[] activityObject = gson.fromJson(jsonArray,ActivityObject[].class);
-
-        final Button call_Button = (Button) findViewById(R.id.button_contact);
-        final View go_Layout = findViewById(R.id.layoutAdresseActivite);
-        final Button website_Button = (Button) findViewById(R.id.button_go);
-        //TODO BUTTONS
-
-        final ImageView imageActivite1 = (ImageView) findViewById(R.id.imageActivite1);
-        final TextView dateActivite1 = (TextView) findViewById(R.id.dateActivite1);
-        final TextView horaireActivite1 = (TextView) findViewById(R.id.horaireActivite1);
-        final TextView prixActivite1 = (TextView) findViewById(R.id.prixActivite1);
-        final TextView nomPlaceActivite1 = (TextView) findViewById(R.id.nomPlaceActivite1);
-        final TextView adresseActivite1 = (TextView) findViewById(R.id.adresseActivite1);
-        final TextView environnementActivite1 = (TextView) findViewById(R.id.exterieurActivite1);
-        final TextView descriptionActivite1 = (TextView) findViewById(R.id.descriptionActivite1);
-        final TextView capaciteActivite1 = (TextView) findViewById(R.id.capaciteActivite1);
-
-
-
-        this.setTitle(activityObject[0].getTitre());
-        final TextView themeActivite1 = (TextView) findViewById(R.id.theme_activite1);
-        themeActivite1.setText(activityObject[0].getTheme());
-        dateActivite1.setText(activityObject[0].getDateAffichage());
-        prixActivite1.setText(activityObject[0].getBudget());
-        nomPlaceActivite1.setText(activityObject[0].getTitre());
-        adresseActivite1.setText(activityObject[0].getNumero() + " " + activityObject[0].getRue() + ", " + activityObject[0].getCodePostal() + " " + activityObject[0].getVille());
-        environnementActivite1.setText(activityObject[0].getEnvironnement());
-        descriptionActivite1.setText(activityObject[0].getDescription());
-        capaciteActivite1.setText(activityObject[0].getCapaciteMax() + " personnes");
-        horaireActivite1.setText(activityObject[0].getHoraire());
-
-        String imageName = "R.drawable." + activityObject[0].getImage();
-        //imageActivite1.setImageResource(imageName);
-
-
-
-
+        final ActivityObject[] activityObject = gson.fromJson(jsonArray, ActivityObject[].class);
+        setMaj(choice, activityObject);
         /**
          * Déclaration des méthodes lors du clic sur le bouton d'appel
          */
+        call_Button = (Button) findViewById(R.id.button_contact);
         call_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:"+activityObject[0].getTelephone()));
+                callIntent.setData(Uri.parse("tel:" + activityObject[choice].getTelephone()));
 
                 if (ActivityCompat.checkSelfPermission(
                         DescribeActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
@@ -100,12 +101,13 @@ public class DescribeActivity extends AppCompatActivity {
         /**
          * Déclaration des méthodes lors du clic sur le linear_layout de l'adresse
          */
+        go_Layout = findViewById(R.id.layoutAdresseActivite);
         go_Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goIntent = new Intent(Intent.ACTION_VIEW);
                 //goIntent.setData(Uri.parse("google.navigation:q="+Uri.encode("Apple Cupertino")));
-                goIntent.setData(Uri.parse("geo:0,0?q="+Uri.encode(adresseActivite1.getText().toString())));
+                goIntent.setData(Uri.parse("geo:0,0?q=" + Uri.encode(adresseActivite1.getText().toString())));
                 goIntent.setPackage("com.google.android.apps.maps");
 
                 if (ActivityCompat.checkSelfPermission(
@@ -121,18 +123,14 @@ public class DescribeActivity extends AppCompatActivity {
         /**
          * Déclaration méthodes lors du clic sur le bouton j'y vais
          */
-
+        website_Button = (Button) findViewById(R.id.button_go);
         website_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://"+activityObject[0].getSite()));
+                webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://" + activityObject[choice].getSite()));
                 startActivity(webIntent);
             }
-        })
-
-        ;
-
-
+        });
     }
 
     @Override
@@ -175,8 +173,112 @@ public class DescribeActivity extends AppCompatActivity {
         return json;
     }
 
+    protected void setMaj(int number, ActivityObject[] activityObject){
+        this.setTitle(activityObject[number].getTitre());
+        LinearLayout buttonContainer = (LinearLayout) findViewById(R.id.buttonContainer);
+
+        themeActivite1 = (TextView) findViewById(R.id.theme_activite1);
+        imageActivite1 = (ImageView) findViewById(R.id.imageActivite1);
+        dateActivite1 = (TextView) findViewById(R.id.dateActivite1);
+        horaireActivite1 = (TextView) findViewById(R.id.horaireActivite1);
+        prixActivite1 = (TextView) findViewById(R.id.prixActivite1);
+        nomPlaceActivite1 = (TextView) findViewById(R.id.nomPlaceActivite1);
+        adresseActivite1 = (TextView) findViewById(R.id.adresseActivite1);
+
+        //Boutons horizontal Scroll
+
+        //Lieu événement
+        exterieurActivite = (Button) findViewById(R.id.environnementExterieur);
+        interieurActivite = (Button) findViewById(R.id.environnementInterieur);
+
+        //Accessibilité activité
+        pmrActivite = (Button) findViewById(R.id.PMR);
+        malentendantActivite = (Button) findViewById(R.id.malentendant);
+        malvoyantActivite = (Button) findViewById(R.id.malvoyant);
+        enfantActivite = (Button) findViewById(R.id.enfant);
+        ageeActivite = (Button) findViewById(R.id.agee);
+
+        //Capacité Activité
+        capaciteActivite = (Button) findViewById(R.id.capacite);
+
+        //Moyen de paiement activité
+        cbActivite = (Button) findViewById(R.id.CB);
+        paypalActivite = (Button) findViewById(R.id.payPal);
+        especesActivites = (Button) findViewById(R.id.especes);
+        chequeActivites = (Button) findViewById(R.id.cheque);
 
 
+        descriptionActivite1 = (TextView) findViewById(R.id.descriptionActivite1);
 
+        themeActivite1.setText(activityObject[number].getTheme());
+        dateActivite1.setText(activityObject[number].getDateAffichage());
+        prixActivite1.setText(activityObject[number].getBudget());
+        nomPlaceActivite1.setText(activityObject[number].getTitre());
+        if(activityObject[number].getNumero() == -1){
+            adresseActivite1.setText(activityObject[number].getRue() + ", " + activityObject[number].getCodePostal() + " " + activityObject[number].getVille());
+        }else{
+            adresseActivite1.setText(activityObject[number].getNumero() + " " + activityObject[number].getRue() + ", " + activityObject[number].getCodePostal() + " " + activityObject[number].getVille());
+        }
+        descriptionActivite1.setText(activityObject[number].getDescription());
+        horaireActivite1.setText(activityObject[number].getHoraire());
+
+
+        Button button = new Button(this);
+        button.setText("Test");
+        buttonContainer.addView(button);
+
+        capaciteActivite.setText(activityObject[number].getCapaciteMax() + " Personnes");
+        capaciteActivite.setVisibility(View.VISIBLE);
+
+        accessibilites = activityObject[number].getAccessibilite();
+        for(int i = 0;i<accessibilites.length;i++){
+            switch (accessibilites[i]){
+                case "PMR":
+                    pmrActivite.setVisibility(View.VISIBLE);
+                    break;
+                case "Malentendant":
+                    malentendantActivite.setVisibility(View.VISIBLE);
+                    break;
+                case "Malvoyant":
+                    malvoyantActivite.setVisibility(View.VISIBLE);
+                    break;
+                case "Enfant":
+                    enfantActivite.setVisibility(View.VISIBLE);
+                    break;
+                case "Agee":
+                    ageeActivite.setVisibility(View.VISIBLE);
+                    break;
+            }
+        }
+
+        paiement = activityObject[number].getPaiement();
+        for(int i = 0; i<paiement.length;i++){
+            switch (paiement[i]){
+                case "CB":
+                    cbActivite.setVisibility(View.VISIBLE);
+                    break;
+                case "Paypal":
+                    paypalActivite.setVisibility(View.VISIBLE);
+                    break;
+                case "Espèces":
+                    especesActivites.setVisibility(View.VISIBLE);
+                    break;
+                case "Chèque":
+                    chequeActivites.setVisibility(View.VISIBLE);
+                    break;
+            }
+        }
+
+        if(activityObject[number].getEnvironnement().equals("Les deux") ){
+            exterieurActivite.setVisibility(View.VISIBLE);
+            interieurActivite.setVisibility(View.VISIBLE);
+        }else if(activityObject[number].getEnvironnement().equals("Intérieur")){
+            interieurActivite.setVisibility(View.VISIBLE);
+        }else if(activityObject[number].getEnvironnement().equals("Extérieur")){
+            exterieurActivite.setVisibility(View.VISIBLE);
+
+        }
+        String imageName = "R.drawable." + activityObject[number].getImage();
+    }
 
 }

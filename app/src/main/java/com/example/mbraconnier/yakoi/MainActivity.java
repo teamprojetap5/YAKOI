@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        this.setTitle("Vos 5 choix d'activités");
+
         Gson gson = new GsonBuilder().create();
         jsonArray = loadJSONFromAsset();
         ActivityObject[] activityObject = gson.fromJson(jsonArray,ActivityObject[].class);
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         final View activity3Layout = findViewById(R.id.layoutActivity3);
         final View activity4Layout = findViewById(R.id.layoutActivity4);
         final View activity5Layout = findViewById(R.id.layoutActivity5);
+
         final LinearLayout imageActivite1 = (LinearLayout) findViewById(R.id.layoutActivity1);
         final LinearLayout imageActivite2 = (LinearLayout) findViewById(R.id.layoutActivity2);
         final LinearLayout imageActivite3 = (LinearLayout) findViewById(R.id.layoutActivity3);
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView localisationActivite4 = (TextView)findViewById(R.id.localisationActivity4);
         final TextView localisationActivite5 = (TextView)findViewById(R.id.localisationActivity5);
 
-        this.setTitle("Vos 5 choix d'activités");
+
         nomActivite1.setText(activityObject[0].getTitre());
         prixActivite1.setText(activityObject[0].getBudget());
         localisationActivite1.setText(activityObject[0].getVille());
@@ -80,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this,"Click activité 1",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                intent.putExtra("Choice",0);
                 startActivity(intent);
             }
         });
@@ -87,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this,"Click activité 2",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, TestGeolocalisation.class);
+                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                intent.putExtra("choice",1);
                 startActivity(intent);
             }
         });
@@ -95,20 +100,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this,"Click activité 3",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, TestPhone.class);
+                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                intent.putExtra("choice",2);
                 startActivity(intent);
             }
         });
         activity4Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Click activité 4",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                intent.putExtra("choice",3);
+                startActivity(intent);
             }
         });
         activity5Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"Click activité 5",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                intent.putExtra("choice",4);
+                startActivity(intent);
             }
         });
     }
@@ -116,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
     protected String loadJSONFromAsset(){
         String json = null;
         try {
-            InputStream is = getAssets().open("5activities.json");
+            InputStream is = getAssets().open("activity.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
