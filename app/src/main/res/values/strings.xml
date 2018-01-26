@@ -1,5 +1,6 @@
 <resources>
     <!--Strings relatifs à l'ensemble des pages -->
+    <item type="id" name="myadapteurview"/>
     <string name="app_name">YAKOI</string>
     <string name="description">Description:</string>
     <string name="personne">Personnes</string>
@@ -9,11 +10,72 @@
     <string name="malentendant">Malentendant</string>
     <string name="malvoyant">Malvoyant</string>
     <string name="enfant">Enfant</string>
+    <string name="numero2">Etape Numero 2</string>
     <string name="agee">Personne Agée</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <item type="id" name="buttonSport"/>
+    <string name="Sport">Sport</string>
+
+    <!--Strings relatifs création évènement -->
+    <string name="New_Event">Nouvel évènement</string>
+    <string name="Titre">Titre :</string>
+    <string name="Description">Description :</string>
+    <string name="SelectImage">Selectionnez une image: </string>
+    <string name="SelectTheme">Selectionnez un thème: </string>
+    <string name="SelectLogo">Selectionnez un logo pour votre activité: </string>
+    <string name="SelectType">Type d\'activité:  </string>
+    <string name="Reguliere">Régulière</string>
+    <string name="Ponctuelle">Ponctuelle</string>
+    <string name="VotreSite">www.VotreSiteInternet.com</string>
+    <string name="VotreTelephone">Votre téléphone</string>
+    <string name="VotreMail">Votre adresse e-mail</string>
+    <string name="Numero">N°</string>
+    <string name="Rue">Rue</string>
+    <string name="CodePostal">CP</string>
+    <string name="Ville">Ville</string>
+    <string name="Date">Date</string>
+    <string name="Horaire">Horaires</string>
+    <string name="HoraireDeb">Heure d\'ouverture</string>
+    <string name="HoraireFin">Heure de fermeture</string>
+    <string name="MoyenPaiement">Moyens de paiements</string>
+    <string name="CarteBleue">Carte Bleue</string>
+    <string name="Cheque">Chèques</string>
+    <string name="Especes">Espèces</string>
+    <string name="PayPal">PayPal</string>
+    <string name="Autre">Autre</string>
+    <string name="Environnement">Environnement</string>
+    <string name="Interieur">Intérieur</string>
+    <string name="Exterieur">Extérieur</string>
+    <string name="LesDeux">Les deux</string>
+    <string name="Capacite">Capacité </string>
+    <string name="SansLimite">Sans Limite</string>
+    <string name="Accessibilite">Accessibilite</string>
 
 
     <!-- Strings relatifs au main -->
+    <string name="pseudo">Pseudo</string>
+    <string name="password">Mot de passe</string>
+    <string name="connectionButton">Se connnecter</string>
+    <string name="registerButton">S\'inscrire</string>
+    <string name="NumeroEtape">1</string>
+    <string name="AddUserEtape1">Etape 1/5</string>
+    <string name="AddUserEtape2">Etape 2/5</string>
+    <string name="AddUserEtape3">Etape 3/5</string>
+    <string name="AddUserEtape4">Etape 4/5</string>
+    <string name="AddUserEtape5">Etape 5/5</string>
+    <string name="Sexe">sexe</string>
+    <string name="Femme">Femme</string>
+    <string name="Homme">Homme</string>
+    <string name="Contact">Contact</string>
+    <string name="from_date">From Date</string>
+    <string name="ConfirmationMotDePasse">Confirmation Mot de passe</string>
+    <string name="Email">Email</string>
+    <string name="ConfirmEmail">Confirmation de l\'E-Mail</string>
+    
+    <string name="Budget">Budget</string>
 
 
     <!-- Strings relatifs à l'ativité numéro 1-->

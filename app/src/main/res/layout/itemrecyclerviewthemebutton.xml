@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttontheme"
+        android:layout_width="115dp"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@drawable/roundbutton"
+        android:gravity="center"
+        android:text="@string/Sport"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -1,5 +1,9 @@
 package com.example.mbraconnier.yakoi;
 
+/**
+ * Created by mbraconnier on 17/01/2018.
+ */
+
 import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -16,9 +20,10 @@ import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity {
 
+public class FiveChoices extends AppCompatActivity {
     private String jsonArray;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this,"Click activité 1",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                Intent intent = new Intent(FiveChoices.this, DescribeActivity.class);
                 intent.putExtra("Choice",0);
                 startActivity(intent);
             }
@@ -91,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this,"Click activité 2",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, DescribeActivity.class);
+                Intent intent = new Intent(FiveChoices.this, DescribeActivity.class);
                 intent.putExtra("choice",1);
                 startActivity(intent);
             }
@@ -100,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(MainActivity.this,"Click activité 3",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, NewEventFirstPage.class);
+                Intent intent = new Intent(FiveChoices.this, DescribeActivity.class);
                 intent.putExtra("choice",2);
                 startActivity(intent);
             }
@@ -108,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         activity4Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondMain.class);
+                Intent intent = new Intent(FiveChoices.this, DescribeActivity.class);
                 intent.putExtra("choice",3);
                 startActivity(intent);
             }
@@ -116,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         activity5Layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, NewEventFifthPage.class);
+                Intent intent = new Intent(FiveChoices.this, DescribeActivity.class);
                 intent.putExtra("choice",4);
                 startActivity(intent);
             }

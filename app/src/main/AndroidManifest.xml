@@ -30,6 +30,94 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
+        <activity android:name=".FiveChoices"
+            android:label="@string/nameActivity1"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".SecondMain"
+            android:label="@string/nameActivity1"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".AddUserFirstPage"
+            android:label="@string/nameActivity1"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".AddUserSecondPage"
+            android:label="@string/nameActivity1"
+            android:parentActivityName=".AddUserFirstPage"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AddUserFirstPage"/>
+        </activity>
+        <activity android:name=".NewEventFirstPage"
+            android:label="@string/New_Event"
+            android:parentActivityName=".EcranSelection"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EcranSelection"/>
+        </activity>
+        <activity android:name=".NewEventSecondPage"
+            android:label="@string/New_Event"
+            android:parentActivityName=".NewEventFirstPage"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewEventFirstPage"/>
+        </activity>
+        <activity android:name=".EcranSelection"
+            android:label="@string/New_Event"
+            android:parentActivityName=".SecondMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".NewEventFirstPage"/>
+        </activity>
+        <activity android:name=".MenuActivity"
+            android:label="@string/New_Event"
+            android:parentActivityName=".SecondMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SecondMain"/>
+        </activity>
+        <activity android:name=".NewEventThirdPage"
+            android:label="@string/New_Event"
+            android:parentActivityName=".SecondMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".NewEventFourthPage"
+            android:label="@string/New_Event"
+            android:parentActivityName=".SecondMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+        <activity android:name=".NewEventFifthPage"
+            android:label="@string/New_Event"
+            android:parentActivityName=".SecondMain"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    android:layout_height="fill_parent"
+    android:background='#E2E2E2'>
+
+    <ImageView
+        android:layout_width="314dp"
+        android:layout_height="230dp"
+
+        android:gravity="center"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/Login"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/pseudo"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:singleLine="false"
+        android:textSize="22dp"></EditText>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="22dp">
+
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/LayoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connectionButton"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/connectionButton" />
+
+        <Button
+            android:id="@+id/buttonNouveauCompte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registerButton" />
+    </LinearLayout>
+
+
+</LinearLayout>

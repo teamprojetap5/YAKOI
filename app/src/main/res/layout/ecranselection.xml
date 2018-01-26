@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- LinearLayout haut -->
+    <LinearLayout
+        android:id="@+id/layoutActivity1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:background='#E2E2E2'>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/search" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Je recherche une activité"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- LinearLayout bas -->
+    <LinearLayout
+
+
+        android:id="@+id/layoutActivity2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background='#C6C6C6'
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_margin="3dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/plus" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Je propose une activité"
+            android:textSize="25dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

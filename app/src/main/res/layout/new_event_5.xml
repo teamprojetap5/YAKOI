@@ -5,9 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.mbraconnier.yakoi.DescribeActivity">
+    tools:context=".NewEventFifthPage"
+    android:background="@color/white">
 
-    <!-- LinearLayout image Activité - Logo activité -->
+    <ProgressBar
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:indeterminate="false"
+        android:progress="100"
+        android:progressTint="@android:color/holo_orange_dark"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+
     <LinearLayout
         android:id="@+id/imageActivite"
         android:layout_width="match_parent"
@@ -382,6 +396,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
 
 </LinearLayout>

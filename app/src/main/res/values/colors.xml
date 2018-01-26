@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="error">#e80c0c</color>
+    <color name="black">#000000</color>
+    <color name="button">#cac7c7</color>
+    <color name="buttonChecked">#ffe017</color>
+    <color name="white">#FFFFFF</color>
+    <color name="defaut">#c1c1c1</color>
 </resources>
